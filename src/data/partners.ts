@@ -6,25 +6,25 @@ import type { Partner, TierGroup } from '@/types'
  * one-line change here.
  */
 export const partners: Partner[] = [
-  { name: 'Vortex Energy', wordmark: 'VORTEX', descriptor: 'Title Partner', tier: 'title' },
+  { name: 'Pertamina', wordmark: 'PERTAMINA', descriptor: 'Title Partner', tier: 'title' },
 
-  { name: 'Meridian Bank', wordmark: 'MERIDIAN', tier: 'founding' },
-  { name: 'Astra Auto Group', wordmark: 'ASTRA', tier: 'founding' },
-  { name: 'Nusantara Air', wordmark: 'NUSANTARA', tier: 'founding' },
-  { name: 'Halcyon Resorts', wordmark: 'HALCYON', tier: 'founding' },
+  { name: 'Bank Mandiri', wordmark: 'MANDIRI', tier: 'founding' },
+  { name: 'Astra International', wordmark: 'ASTRA', tier: 'founding' },
+  { name: 'Telkomsel', wordmark: 'TELKOMSEL', tier: 'founding' },
+  { name: 'Garuda Indonesia', wordmark: 'GARUDA', tier: 'founding' },
 
-  { name: 'Orbit Telecom', wordmark: 'ORBIT', tier: 'presenting' },
-  { name: 'Forge Tyres', wordmark: 'FORGE', tier: 'presenting' },
-  { name: 'Lumen Watches', wordmark: 'LUMEN', tier: 'presenting' },
-  { name: 'Pacific Oil', wordmark: 'PACIFIC', tier: 'presenting' },
-  { name: 'Verde Beverages', wordmark: 'VERDE', tier: 'presenting' },
+  { name: 'Gojek', wordmark: 'GOJEK', tier: 'presenting' },
+  { name: 'Tokopedia', wordmark: 'TOKOPEDIA', tier: 'presenting' },
+  { name: 'Bank BCA', wordmark: 'BCA', tier: 'presenting' },
+  { name: 'Indomie', wordmark: 'INDOMIE', tier: 'presenting' },
+  { name: 'Aqua', wordmark: 'AQUA', tier: 'presenting' },
 
-  { name: 'Nimbus Cloud', wordmark: 'NIMBUS', tier: 'official' },
-  { name: 'Ironclad Security', wordmark: 'IRONCLAD', tier: 'official' },
-  { name: 'Solace Hotels', wordmark: 'SOLACE', tier: 'official' },
-  { name: 'Kilograph Media', wordmark: 'KILOGRAPH', tier: 'official' },
-  { name: 'Delta Logistics', wordmark: 'DELTA', tier: 'official' },
-  { name: 'Aria Apparel', wordmark: 'ARIA', tier: 'official' },
+  { name: 'Eiger', wordmark: 'EIGER', tier: 'official' },
+  { name: 'Erigo', wordmark: 'ERIGO', tier: 'official' },
+  { name: 'Polytron', wordmark: 'POLYTRON', tier: 'official' },
+  { name: 'Kapal Api', wordmark: 'KAPAL API', tier: 'official' },
+  { name: 'Traveloka', wordmark: 'TRAVELOKA', tier: 'official' },
+  { name: 'Kompas', wordmark: 'KOMPAS', tier: 'official' },
 ]
 
 const tierOrder: { tier: TierGroup['tier']; label: string }[] = [

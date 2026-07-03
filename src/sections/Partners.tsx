@@ -57,7 +57,7 @@ export function Partners() {
               </>
             }
             align="center"
-            intro="The brands that make race weekend possible — from the title partner to every official supplier on the grid."
+            intro="Indonesia’s leading brands power the SARGA season — from our title partner to every official supplier on the grid."
           />
         </div>
 
@@ -97,7 +97,7 @@ export function Partners() {
             </h3>
             <p className="max-w-md text-sm text-ash">
               Partnership packages for {new Date().getFullYear() + 1} and beyond are open. Reach
-              millions of fans across the SARGA World Championship.
+              millions of fans across the SARGA Motorsport season in Indonesia.
             </p>
             <Button as="a" href="#" size="lg" icon={<ArrowUpRight size={16} />}>
               Become a Partner

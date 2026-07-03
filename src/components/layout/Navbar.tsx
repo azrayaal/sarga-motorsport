@@ -33,7 +33,7 @@ export function Navbar() {
           : 'border-b border-transparent bg-gradient-to-b from-ink/70 to-transparent',
       )}
     >
-      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-12">
+      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between pr-5 sm:pr-8 lg:pr-12">
         <Logo />
 
         <ul className="hidden items-center gap-9 lg:flex">

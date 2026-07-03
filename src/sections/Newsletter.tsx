@@ -15,7 +15,12 @@ export function Newsletter() {
   }
 
   return (
-    <section className="relative overflow-hidden bg-molten">
+     <section
+        className="relative overflow-hidden bg-molten bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/bg-cubes.png')",
+        }}
+      >
       <div className="motif-diagonal absolute inset-0 opacity-20" />
       <Container className="relative py-16">
         <div className="flex flex-col items-center gap-7 text-center">

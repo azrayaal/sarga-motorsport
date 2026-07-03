@@ -42,27 +42,36 @@ export function Hero() {
             <span className="border border-molten/50 bg-molten/10 px-3 py-1.5 text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-molten">
               The Official Site
             </span>
-            <span className="text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-ash">
+            {/* <span className="text-[0.62rem] font-semibold uppercase tracking-[0.22em] text-ash">
               {event.series} · {event.edition}
-            </span>
+            </span> */}
           </motion.div>
 
-          <h1 className="text-display text-[3.4rem] leading-[0.82] text-bone sm:text-7xl lg:text-[7.5rem]">
-            {['SARGA', 'MOTORSPORT'].map((text, i) => (
-              <span key={text} className="block overflow-hidden">
-                <motion.span
-                  custom={i}
-                  variants={line}
-                  initial="hidden"
-                  animate="show"
-                  className="block"
-                >
-                  {text}
-                </motion.span>
-              </span>
-            ))}
-          </h1>
+         <h1 className="text-display text-[3.4rem] leading-[0.82] text-bone sm:text-7xl lg:text-[7.5rem]">
+          <span className="block overflow-hidden">
+            <motion.span
+              custom={0}
+              variants={line}
+              initial="hidden"
+              animate="show"
+              className="block"
+            >
+              SARGA
+            </motion.span>
+          </span>
 
+          <span className="block overflow-hidden">
+            <motion.span
+              custom={1}
+              variants={line}
+              initial="hidden"
+              animate="show"
+              className="block"
+            >
+              MOTOR<span className="text-molten">SPORT</span>
+            </motion.span>
+          </span>
+        </h1>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}

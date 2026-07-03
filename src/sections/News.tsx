@@ -81,7 +81,7 @@ export function News() {
       <div className="motif-dots absolute inset-0 opacity-40" />
       <Container className="relative">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <SectionHeader index="05" kicker="Latest News" title="From The Paddock" />
+          <SectionHeader index="05" kicker="Latest News" title="From The Garage" />
           <Reveal delay={0.1}>
             <Button
               as="a"

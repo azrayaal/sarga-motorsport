@@ -1,40 +1,47 @@
 import type { Pillar, Stat } from '@/types'
 
 export const aboutIntro =
-  'SARGA Motorsport brings top-tier wheel-to-wheel racing to the heart of the city. ' +
-  'A floodlit street circuit, three days of on-track action and a festival built ' +
-  'around the sport — engineered from the ground up to be like nothing before.'
+  'SARGA Motorsport is Indonesia’s home for wheel-to-wheel racing. From grand-prix ' +
+  'street circuits to rallycross, drift and speed series, we run a nationwide ' +
+  'championship that puts homegrown talent on a world-class stage — and keeps fans ' +
+  'at the heart of every round.'
+
+/** Sits in the accent box at the bottom of the pillar column. */
+export const aboutHighlight = {
+  title: 'SARGA Motorsport',
+  note: 'Est. 2021 · Jakarta, Indonesia',
+}
 
 export const stats: Stat[] = [
-  { value: 5.1, suffix: ' km', label: 'Circuit Length' },
-  { value: 21, label: 'Corners' },
-  { value: 340, suffix: ' km/h', label: 'Top Speed' },
-  { value: 120, suffix: 'k', label: 'Weekend Capacity' },
+  { value: 6, label: 'Rounds / Season' },
+  { value: 4, label: 'Race Disciplines' },
+  { value: 6, label: 'Host Cities' },
+  { value: 250, suffix: 'k', label: 'Fans / Season' },
 ]
 
 export const pillars: Pillar[] = [
   {
-    title: 'The Circuit',
+    title: 'Multi-Discipline Racing',
     description:
-      'Twenty-one corners threading the downtown grid, from tight hairpins to a ' +
-      '1.2 km flat-out straight past the waterfront.',
+      'One championship across grand prix, rallycross, drift and speed — a full ' +
+      'calendar of motorsport gathered under a single banner.',
   },
   {
-    title: 'Night Racing',
+    title: 'Homegrown Talent',
     description:
-      'Every session runs under permanent floodlighting, turning the skyline into ' +
-      'the backdrop for the fastest cars on the planet.',
+      'A ladder for Indonesian drivers and teams, from grassroots karting to the ' +
+      'national grid and the world stage beyond.',
   },
   {
-    title: 'The Festival',
+    title: 'Circuits Nationwide',
     description:
-      'Grandstands, fan zones, live music and pit-lane access wrap three days of ' +
-      'racing into a single motorsport weekend.',
+      'Racing at the country’s landmark venues — from Mandalika and Sentul to ' +
+      'floodlit street circuits in the capital.',
   },
   {
-    title: 'The Legacy',
+    title: 'Fan-First Experience',
     description:
-      'A ten-year commitment to the city — building talent, jobs and a home for ' +
-      'the championship for a generation of fans.',
+      'Grandstands, fan zones, live music and pit access turn every round into a ' +
+      'weekend built around the fans.',
   },
 ]
