@@ -27,6 +27,12 @@
   /* Secondary accent — chequered ivory / caution */
   --color-gold: #ffcd00;
 
+  /* Section accent palettes (for per-section background glows) */
+  --color-teal: #3edbd8;   /* Slipstream Teal */
+  --color-navy: #09357e;   /* Draftline Navy */
+  --color-amber: #f5ba43;  /* Ignition Amber */
+  --color-flame: #f05e15;  /* Flashpoint Orange */
+
   /* Fonts */
   --font-display: 'Archivo', 'Archivo Black', system-ui, sans-serif;
   --font-sans: 'Sora', system-ui, sans-serif;
@@ -114,6 +120,27 @@
       transparent 10px,
       transparent 20px
     );
+  }
+
+  /* Per-section background glows — layered radial tints over the dark base.
+     Cool = teal + navy · Warm = amber + flame. */
+  .bg-glow-cool {
+    background:
+      radial-gradient(85% 70% at 12% 0%, color-mix(in srgb, var(--color-teal) 22%, transparent), transparent 55%),
+      radial-gradient(85% 80% at 100% 100%, color-mix(in srgb, var(--color-navy) 62%, transparent), transparent 58%);
+  }
+  .bg-glow-warm {
+    background:
+      radial-gradient(80% 70% at 10% 6%, color-mix(in srgb, var(--color-amber) 22%, transparent), transparent 55%),
+      radial-gradient(90% 80% at 96% 100%, color-mix(in srgb, var(--color-flame) 44%, transparent), transparent 58%);
+  }
+
+  /* Gradient hairline accents */
+  .rule-cool {
+    background: linear-gradient(90deg, transparent, var(--color-teal), var(--color-navy), transparent);
+  }
+  .rule-warm {
+    background: linear-gradient(90deg, transparent, var(--color-amber), var(--color-flame), transparent);
   }
 
   /* Decorative section motifs */

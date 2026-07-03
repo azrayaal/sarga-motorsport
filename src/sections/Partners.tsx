@@ -43,6 +43,8 @@ const gridForTier: Record<string, string> = {
 export function Partners() {
   return (
     <section id="partners" className="relative overflow-hidden bg-ink py-24 sm:py-32">
+      <div className="bg-glow-warm absolute inset-0" />
+      <div className="rule-warm absolute inset-x-0 top-0 h-px opacity-70" />
       <div className="motif-diagonal absolute inset-0 opacity-60" />
       <Container className="relative">
         <div className="flex flex-col items-center gap-4 text-center">

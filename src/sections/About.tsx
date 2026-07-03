@@ -7,6 +7,8 @@ import { aboutHighlight, aboutIntro, pillars, stats } from '@/data/about'
 export function About() {
   return (
     <section id="about" className="relative overflow-hidden bg-ink py-24 sm:py-32">
+      <div className="bg-glow-cool absolute inset-0" />
+      <div className="rule-cool absolute inset-x-0 top-0 h-px opacity-70" />
       <div className="motif-dots absolute inset-0 opacity-50" />
       <Container className="relative">
         <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:gap-20">

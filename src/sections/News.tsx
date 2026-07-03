@@ -78,6 +78,8 @@ export function News() {
 
   return (
     <section id="news" className="relative overflow-hidden bg-void py-24 sm:py-32">
+      <div className="bg-glow-cool absolute inset-0" />
+      <div className="rule-cool absolute inset-x-0 top-0 h-px opacity-70" />
       <div className="motif-dots absolute inset-0 opacity-40" />
       <Container className="relative">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
