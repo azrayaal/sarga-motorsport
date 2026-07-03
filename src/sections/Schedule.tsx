@@ -13,7 +13,7 @@ export function Schedule() {
       <Container className="relative">
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <SectionHeader
-            index="03"
+            index="02"
             kicker="Season Calendar"
             title="The Schedule"
             intro="Every round of the 2026 SARGA Motorsport season — grand prix, rallycross, drift and speed. Secure your seat before lights out."

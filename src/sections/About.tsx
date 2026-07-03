@@ -14,7 +14,7 @@ export function About() {
         <div className="grid gap-14 lg:grid-cols-[1.1fr_1fr] lg:gap-20">
           <div className="flex flex-col gap-8">
             <SectionHeader
-              index="02"
+              index="01"
               kicker="About SARGA Motorsport"
               title={
                 <>

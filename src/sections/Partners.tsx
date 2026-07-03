@@ -49,7 +49,7 @@ export function Partners() {
       <Container className="relative">
         <div className="flex flex-col items-center gap-4 text-center">
           <SectionHeader
-            index="04"
+            index="03"
             kicker="Partners & Sponsors"
             title={
               <>
