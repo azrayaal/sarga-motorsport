@@ -1,0 +1,165 @@
+@import 'tailwindcss';
+
+/* ============================================================
+   SARGA Motorsport — Design System
+   Grand-prix black. Crimson ignition. Condensed display type.
+   ============================================================ */
+
+@theme {
+  /* Core surfaces — near-black, layered graphite */
+  --color-ink: #08080a;
+  --color-void: #0b0b0e;
+  --color-carbon: #111116;
+  --color-graphite: #17171d;
+  --color-slate: #1e1e26;
+  --color-steel: #2a2a34;
+
+  /* Text */
+  --color-bone: #f4f1ea;
+  --color-ash: #a5a3a0;
+  --color-smoke: #6f6d6b;
+
+  /* Signature accent — Ignition Crimson */
+  --color-molten: #e10600;
+  --color-molten-hot: #ff2b1f;
+  --color-ember: #a10d05;
+
+  /* Secondary accent — chequered ivory / caution */
+  --color-gold: #ffcd00;
+
+  /* Fonts */
+  --font-display: 'Archivo', 'Archivo Black', system-ui, sans-serif;
+  --font-sans: 'Sora', system-ui, sans-serif;
+
+  /* Motion */
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --breakpoint-3xl: 112rem;
+}
+
+@layer base {
+  * {
+    border-color: color-mix(in srgb, var(--color-bone) 8%, transparent);
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-ink);
+    color: var(--color-bone);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+
+  ::selection {
+    background: var(--color-molten);
+    color: #fff;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-track { background: var(--color-ink); }
+  ::-webkit-scrollbar-thumb { background: var(--color-steel); border-radius: 0; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--color-molten); }
+}
+
+@layer utilities {
+  .text-display {
+    font-family: var(--font-display);
+    font-weight: 800;
+    line-height: 0.86;
+    letter-spacing: -0.03em;
+    font-style: italic;
+  }
+
+  .kicker {
+    font-family: var(--font-sans);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.28em;
+    font-size: 0.7rem;
+  }
+
+  .text-outline {
+    -webkit-text-stroke: 1.5px color-mix(in srgb, var(--color-bone) 22%, transparent);
+    color: transparent;
+  }
+
+  .text-gradient-molten {
+    background: linear-gradient(112deg, #ff2b1f 0%, var(--color-molten) 48%, var(--color-ember) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .rule {
+    border-top: 1px solid color-mix(in srgb, var(--color-bone) 12%, transparent);
+  }
+
+  /* Diagonal racing hazard stripes */
+  .hazard {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      var(--color-molten) 0,
+      var(--color-molten) 10px,
+      transparent 10px,
+      transparent 20px
+    );
+  }
+
+  /* Decorative section motifs */
+  .motif-grid {
+    background-image:
+      linear-gradient(to right, rgba(244, 241, 234, 0.045) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(244, 241, 234, 0.045) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .motif-diagonal {
+    background-image: repeating-linear-gradient(
+      -45deg,
+      rgba(244, 241, 234, 0.04) 0,
+      rgba(244, 241, 234, 0.04) 1px,
+      transparent 1px,
+      transparent 16px
+    );
+  }
+
+  .motif-dots {
+    background-image: radial-gradient(rgba(244, 241, 234, 0.07) 1px, transparent 1.6px);
+    background-size: 26px 26px;
+  }
+
+  .mask-fade-b {
+    -webkit-mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, #000 60%, transparent 100%);
+  }
+
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+  /* Angled corner clip — motorsport ticket edge */
+  .clip-angle {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 26px), calc(100% - 26px) 100%, 0 100%);
+  }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee { animation: marquee 32s linear infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee { animation: none; }
+  html { scroll-behavior: auto; }
+}
