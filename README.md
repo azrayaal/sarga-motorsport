@@ -11,9 +11,18 @@ Built with **React 18 + TypeScript + Vite + Tailwind CSS v4 + Framer Motion**.
 - **Hero** — event title, tagline, key info and a live "lights out" countdown.
 - **Event** — ticket tiers / zones with pricing (the ticketing feature).
 - **About** — event story, animated stats and circuit pillars.
-- **Schedule** — interactive three-day race-weekend timetable.
+- **Schedule** — the season calendar as an event-card grid (category tag, status
+  pill, date, live per-card countdown, price), one featured round highlighted.
 - **Partners & Sponsors** — tiered partner wall (title → founding → presenting → official).
+- **News** — latest stories mirrored from [news.sarga.co](https://news.sarga.co/);
+  "See More" / "Read Article" open the live site in a new tab.
 - **Newsletter** + **Footer** with navigation and socials.
+
+## Assets
+
+- `public/media/` — hero race-car photography and `events/` cover images.
+- `public/news/` — news cover images mirrored from news.sarga.co (its CMS blocks
+  hotlinking, so covers are served locally while article links stay live).
 
 ## Getting started
 
@@ -36,8 +45,10 @@ src/
     event.ts        # the headline event + countdown target
     tickets.ts      # ticket tiers
     schedule.ts     # race-weekend timetable
+    seasonEvents.ts # the season calendar (event cards)
     about.ts        # intro, stats, pillars
     partners.ts     # flat partner list, grouped by tier at render time
+    news.ts         # latest articles (mirrored from news.sarga.co)
     navigation.ts   # nav + footer links
   types/         # shared domain contracts
   hooks/         # useCountdown, useCountUp
@@ -45,7 +56,7 @@ src/
     ui/          # Button, Container, Reveal, SectionHeader, Countdown,
                  # StatCounter, Marquee, Logo
     layout/      # Navbar, Footer
-  sections/      # Hero, Event, About, Schedule, Partners, Newsletter
+  sections/      # Hero, Event, About, Schedule, Partners, News, Newsletter
   pages/         # HomePage composes the sections
 ```
 

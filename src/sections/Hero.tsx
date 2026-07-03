@@ -15,11 +15,20 @@ const line = {
 export function Hero() {
   return (
     <section id="top" className="relative flex min-h-screen items-center overflow-hidden">
-      {/* Layered background — pure CSS, no external assets */}
+      {/* Layered background — real motorsport photography under dark grading */}
       <div className="absolute inset-0 bg-ink" />
-      <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_-10%,rgba(225,6,0,0.28),transparent_55%)]" />
-      <div className="absolute inset-0 bg-[radial-gradient(80%_60%_at_80%_110%,rgba(225,6,0,0.16),transparent_60%)]" />
-      <div className="motif-grid absolute inset-0 opacity-60 mask-fade-b" />
+      <motion.img
+        src="/media/hero.jpg"
+        alt="Formula race car on track"
+        initial={{ scale: 1.12, opacity: 0 }}
+        animate={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 h-full w-full object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-ink/55" />
+      <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/20" />
+      <div className="absolute inset-0 bg-[radial-gradient(120%_90%_at_50%_-10%,rgba(225,6,0,0.32),transparent_55%)]" />
+      <div className="motif-grid absolute inset-0 opacity-30 mask-fade-b" />
       <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-ink to-transparent" />
 
       <div className="relative z-10 mx-auto w-full max-w-7xl px-5 pt-28 pb-16 sm:px-8 lg:px-12">
@@ -39,7 +48,7 @@ export function Hero() {
           </motion.div>
 
           <h1 className="text-display text-[3.4rem] leading-[0.82] text-bone sm:text-7xl lg:text-[7.5rem]">
-            {['SARGA', 'GRAND PRIX'].map((text, i) => (
+            {['SARGA', 'MOTORSPORT'].map((text, i) => (
               <span key={text} className="block overflow-hidden">
                 <motion.span
                   custom={i}

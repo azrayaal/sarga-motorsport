@@ -1,0 +1,82 @@
+import type { SeasonEvent } from '@/types'
+
+/**
+ * The SARGA Motorsport season calendar. Cards render straight from this list —
+ * add an event and it appears, sorted by date. Cover assets live in
+ * public/media/events/.
+ */
+export const seasonEvents: SeasonEvent[] = [
+  {
+    id: 'rallycross-bandung',
+    title: 'SARGA Rallycross — Bandung',
+    category: 'Rallycross',
+    status: 'Registration Open',
+    dateLabel: '09 Aug 2026',
+    startsAt: '2026-08-09T15:00:00+07:00',
+    venue: 'Sirkuit Dago Highland, Bandung',
+    priceFrom: 'IDR 120k',
+    image: '/media/events/rallycross.jpg',
+    href: '#event',
+  },
+  {
+    id: 'speed-series-mandalika',
+    title: 'SARGA Speed Series — Mandalika',
+    category: 'Motorsport',
+    status: 'Registration Open',
+    dateLabel: '30 Aug 2026',
+    startsAt: '2026-08-30T14:00:00+08:00',
+    venue: 'Mandalika Circuit, Lombok',
+    priceFrom: 'IDR 250k',
+    image: '/media/events/speed-series.jpg',
+    href: '#event',
+  },
+  {
+    id: 'night-sprint-sentul',
+    title: 'SARGA Night Sprint — Sentul',
+    category: 'Motorsport',
+    status: 'Selling Fast',
+    dateLabel: '12 Sep 2026',
+    startsAt: '2026-09-12T19:00:00+07:00',
+    venue: 'Sentul International Circuit, Bogor',
+    priceFrom: 'IDR 180k',
+    image: '/media/events/night-sprint.jpg',
+    href: '#event',
+  },
+  {
+    id: 'drift-kings-surabaya',
+    title: 'SARGA Drift Kings — Surabaya',
+    category: 'Drift',
+    status: 'Registration Open',
+    dateLabel: '27 Sep 2026',
+    startsAt: '2026-09-27T16:00:00+07:00',
+    venue: 'Kenjeran Park, Surabaya',
+    priceFrom: 'IDR 150k',
+    image: '/media/events/drift-kings.jpg',
+    href: '#event',
+  },
+  {
+    id: 'grand-prix-jakarta',
+    title: 'SARGA Grand Prix 2026',
+    category: 'Grand Prix',
+    status: 'Selling Fast',
+    dateLabel: '20 Nov 2026',
+    startsAt: '2026-11-20T20:00:00+07:00',
+    venue: 'Sarga Street Circuit, Jakarta',
+    priceFrom: 'IDR 850k',
+    image: '/media/events/grand-prix.jpg',
+    href: '#event',
+    featured: true,
+  },
+  {
+    id: 'grand-final-jakarta',
+    title: 'SARGA Grand Final 2026',
+    category: 'Championship',
+    status: 'Coming Soon',
+    dateLabel: '13 Dec 2026',
+    startsAt: '2026-12-13T19:30:00+07:00',
+    venue: 'Gelora Bung Karno, Jakarta',
+    priceFrom: 'IDR 300k',
+    image: '/media/events/grand-final.jpg',
+    href: '#event',
+  },
+]

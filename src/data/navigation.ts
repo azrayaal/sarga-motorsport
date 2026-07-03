@@ -5,6 +5,7 @@ export const navItems: NavItem[] = [
   { label: 'About', href: '#about' },
   { label: 'Schedule', href: '#schedule' },
   { label: 'Partners', href: '#partners' },
+  { label: 'News', href: '#news' },
 ]
 
 export const footerNav: { heading: string; items: NavItem[] }[] = [
@@ -14,6 +15,7 @@ export const footerNav: { heading: string; items: NavItem[] }[] = [
       { label: 'Event Overview', href: '#event' },
       { label: 'Weekend Schedule', href: '#schedule' },
       { label: 'The Circuit', href: '#about' },
+      { label: 'Latest News', href: '#news' },
     ],
   },
   {

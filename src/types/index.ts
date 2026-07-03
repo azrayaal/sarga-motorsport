@@ -21,21 +21,26 @@ export interface EventInfo {
   dateLabel: string
 }
 
-export type SessionCategory = 'practice' | 'qualifying' | 'race' | 'support' | 'show'
+export type EventStatus = 'Registration Open' | 'Selling Fast' | 'Coming Soon'
 
-export interface Session {
-  time: string
-  title: string
-  category: SessionCategory
-  description: string
-}
-
-export interface ScheduleDay {
+export interface SeasonEvent {
   id: string
-  weekday: string
-  date: string
-  label: string
-  sessions: Session[]
+  title: string
+  /** Discipline tag shown top-left (e.g. "Grand Prix", "Rallycross"). */
+  category: string
+  status: EventStatus
+  /** Display date, e.g. "20 Nov 2026". */
+  dateLabel: string
+  /** ISO date the per-card countdown targets. */
+  startsAt: string
+  venue: string
+  /** Price label, e.g. "IDR 250k" or "Free". */
+  priceFrom: string
+  /** Local cover asset. */
+  image: string
+  /** Where the card links to. */
+  href: string
+  featured?: boolean
 }
 
 export interface Stat {
@@ -68,4 +73,16 @@ export interface TierGroup {
   tier: PartnerTier
   label: string
   partners: Partner[]
+}
+
+export interface NewsArticle {
+  id: string
+  title: string
+  excerpt: string
+  category: string
+  date: string
+  /** Local cover asset (mirrored from news.sarga.co). */
+  image: string
+  /** Full article URL on news.sarga.co. */
+  href: string
 }
