@@ -28,7 +28,7 @@ export function Logo({ className }: LogoProps) {
           </span>
         </span>
       )} */}
-      <img src="/iconlogo.png" alt="SARGA Motorsport" className="h-40 pt-4 w-auto" />
+      <img src="/iconlogo.png" alt="SARGA Motorsport" className="h-8 w-auto" />
     </a>
   )
 }
